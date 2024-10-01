@@ -22,6 +22,7 @@ body {
   justify-content: left;
   gap: 20px;
   font-size: 20px;
+  position: relative;
 }
 
 .para1 {
@@ -38,27 +39,46 @@ body {
 
 img {
   background-image: IMG_20231203_081533;
-  height: 310px;
-  width: 300px;
+  height: 275px;
+  width: 250px;
   border-radius: 50%;
+  position: relative;
 }
 
 .picAndInfo {
+  height: 100px;
   width: 100%;
   display: flex;
-  padding: 50px;
+  padding: 20px;
+  position: relative;
 }
 
 .pic {
   width: 50%;
-  padding: 10px 10px 10px 10px;
-  margin: 10px 10px 10px 10px
-
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+  position: relative;
+  align-items: center;
 }
 
 .info {
-  width: 60%;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
+  width: 50%;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   align-items: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 1000) {
+  img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 500) {
+  img {
+    height: 50px;
+    width: 50px;
+  }
 }
