@@ -1,0 +1,45 @@
+import Link from "next/link"
+import Image from "next/image"
+import MyPic from "@/MyPic.jpg"
+
+export default function Header() {
+    return (
+    <div>
+        <div className="header">
+            <ul className="header-buttons">
+
+                <Link href={"/home"}>
+                    <li>Home</li>
+                </Link>
+
+                <Link href={"/about-us"}>
+                    <li>About Us</li>
+                </Link>
+
+                <Link href={"/gallery"}>
+                    <li>Gallery</li>
+                </Link>
+
+                <Link href={"/contact"}>
+                    <li>Contact</li>
+                </Link>
+
+            </ul>
+        </div>
+        <br />
+
+        <div className="picAndInfo">
+
+            <div className="Info">
+            <p className="para1">Hello, My name is Adam Minhas</p>
+            <br />
+            <p className="para2">I am 21 years old and a student of the Governor Sindh IT Initiative. I possess a little bit of experience in HTML, CSS and JavaScript. Got the knowledge of TypeScript from this Initiative. Alhamdulillah got 90 Percentile in the First Quarter Quiz. I am really looking forward to do hardwork in the upcoming tests that will come.</p>
+            </div>
+
+            <div className="pic">
+            <Image src={MyPic} alt=""/>
+            </div>
+        </div>    
+    </div>
+    )
+}
